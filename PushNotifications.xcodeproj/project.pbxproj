@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		626AD44CBEF7D11D6DDE8BD0 /* Pods_PushNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514E8835B546A13B7AD89FF /* Pods_PushNotifications.framework */; };
 		A33A09A624EA924300EC5CF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A09A524EA924300EC5CF5 /* AppDelegate.swift */; };
 		A33A09A824EA924300EC5CF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A09A724EA924300EC5CF5 /* SceneDelegate.swift */; };
 		A33A09AA24EA924300EC5CF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33A09A924EA924300EC5CF5 /* ViewController.swift */; };
 		A33A09AD24EA924300EC5CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33A09AB24EA924300EC5CF5 /* Main.storyboard */; };
 		A33A09AF24EA924700EC5CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33A09AE24EA924700EC5CF5 /* Assets.xcassets */; };
 		A33A09B224EA924700EC5CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33A09B024EA924700EC5CF5 /* LaunchScreen.storyboard */; };
+		A33A09BA24EA94D700EC5CF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A33A09B924EA94D700EC5CF5 /* GoogleService-Info.plist */; };
+		A33AF00A24EAC9BF00D99365 /* SViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33AF00924EAC9BF00D99365 /* SViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4514E8835B546A13B7AD89FF /* Pods_PushNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FBD35F8ACCF268AE1236C85 /* Pods-PushNotifications.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifications.release.xcconfig"; path = "Target Support Files/Pods-PushNotifications/Pods-PushNotifications.release.xcconfig"; sourceTree = "<group>"; };
 		A33A09A224EA924300EC5CF5 /* PushNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33A09A524EA924300EC5CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A33A09A724EA924300EC5CF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,10 @@
 		A33A09AE24EA924700EC5CF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A33A09B124EA924700EC5CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A33A09B324EA924700EC5CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A33A09B924EA94D700EC5CF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A33A09BB24EA98C800EC5CF5 /* PushNotifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotifications.entitlements; sourceTree = "<group>"; };
+		A33AF00924EAC9BF00D99365 /* SViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SViewController.swift; sourceTree = "<group>"; };
+		CD245B4C4E88FF5815B19DCC /* Pods-PushNotifications.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifications.debug.xcconfig"; path = "Target Support Files/Pods-PushNotifications/Pods-PushNotifications.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626AD44CBEF7D11D6DDE8BD0 /* Pods_PushNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FF5D17FBEA68875571A158E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4514E8835B546A13B7AD89FF /* Pods_PushNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9020CB24930C5276508EF7EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD245B4C4E88FF5815B19DCC /* Pods-PushNotifications.debug.xcconfig */,
+				4FBD35F8ACCF268AE1236C85 /* Pods-PushNotifications.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A33A099924EA924300EC5CF5 = {
 			isa = PBXGroup;
 			children = (
 				A33A09A424EA924300EC5CF5 /* PushNotifications */,
 				A33A09A324EA924300EC5CF5 /* Products */,
+				9020CB24930C5276508EF7EF /* Pods */,
+				4FF5D17FBEA68875571A158E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +85,15 @@
 		A33A09A424EA924300EC5CF5 /* PushNotifications */ = {
 			isa = PBXGroup;
 			children = (
+				A33A09BB24EA98C800EC5CF5 /* PushNotifications.entitlements */,
 				A33A09A524EA924300EC5CF5 /* AppDelegate.swift */,
 				A33A09A724EA924300EC5CF5 /* SceneDelegate.swift */,
 				A33A09A924EA924300EC5CF5 /* ViewController.swift */,
 				A33A09AB24EA924300EC5CF5 /* Main.storyboard */,
+				A33AF00924EAC9BF00D99365 /* SViewController.swift */,
 				A33A09AE24EA924700EC5CF5 /* Assets.xcassets */,
 				A33A09B024EA924700EC5CF5 /* LaunchScreen.storyboard */,
+				A33A09B924EA94D700EC5CF5 /* GoogleService-Info.plist */,
 				A33A09B324EA924700EC5CF5 /* Info.plist */,
 			);
 			path = PushNotifications;
@@ -74,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A33A09B624EA924700EC5CF5 /* Build configuration list for PBXNativeTarget "PushNotifications" */;
 			buildPhases = (
+				B0F541B4E6388782E446A03E /* [CP] Check Pods Manifest.lock */,
 				A33A099E24EA924300EC5CF5 /* Sources */,
 				A33A099F24EA924300EC5CF5 /* Frameworks */,
 				A33A09A024EA924300EC5CF5 /* Resources */,
+				56F83DFE56AB9DF367B0AA5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33A09BA24EA94D700EC5CF5 /* GoogleService-Info.plist in Resources */,
 				A33A09B224EA924700EC5CF5 /* LaunchScreen.storyboard in Resources */,
 				A33A09AF24EA924700EC5CF5 /* Assets.xcassets in Resources */,
 				A33A09AD24EA924300EC5CF5 /* Main.storyboard in Resources */,
@@ -133,6 +168,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56F83DFE56AB9DF367B0AA5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushNotifications/Pods-PushNotifications-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushNotifications/Pods-PushNotifications-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PushNotifications/Pods-PushNotifications-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0F541B4E6388782E446A03E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushNotifications-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A33A099E24EA924300EC5CF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +217,7 @@
 			files = (
 				A33A09AA24EA924300EC5CF5 /* ViewController.swift in Sources */,
 				A33A09A624EA924300EC5CF5 /* AppDelegate.swift in Sources */,
+				A33AF00A24EAC9BF00D99365 /* SViewController.swift in Sources */,
 				A33A09A824EA924300EC5CF5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,8 +360,10 @@
 		};
 		A33A09B724EA924700EC5CF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD245B4C4E88FF5815B19DCC /* Pods-PushNotifications.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushNotifications/PushNotifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3L69V7V28R;
 				INFOPLIST_FILE = PushNotifications/Info.plist;
@@ -300,8 +380,10 @@
 		};
 		A33A09B824EA924700EC5CF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FBD35F8ACCF268AE1236C85 /* Pods-PushNotifications.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PushNotifications/PushNotifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3L69V7V28R;
 				INFOPLIST_FILE = PushNotifications/Info.plist;
